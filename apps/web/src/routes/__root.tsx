@@ -41,9 +41,8 @@ export const Route = createRootRouteWithContext<{
       },
       {
         name: "description",
-        content:
-          // scaffold:description
-          "A minimal monorepo starter for 🏝️ TanStack Start, curated from the best of the TypeScript ecosystem.",
+        // scaffold:description
+        content: "A minimal monorepo starter template for 🏝️ TanStack Start",
       },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
