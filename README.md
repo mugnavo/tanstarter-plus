@@ -12,7 +12,7 @@
 A minimal monorepo starter for 🏝️ TanStack Start, based on [mugnavo/tanstarter](https://github.com/mugnavo/tanstarter).
 
 ```
-pnpm create mugnavo@latest -t monorepo
+pnpm create mugnavo -t monorepo
 ```
 
 - [Turborepo](https://turborepo.com/) + [pnpm](https://pnpm.io/)
@@ -54,7 +54,7 @@ pnpm create mugnavo@latest -t monorepo
 1. [Use this template](https://github.com/new?template_name=tanstarter-monorepo&template_owner=mugnavo) or create a project using our CLI:
 
    ```
-   pnpm create mugnavo@latest -t monorepo
+   pnpm create mugnavo -t monorepo
    ```
 
 2. Create `.env` files in [`/apps/web`](./apps/web/.env.example) and [`/packages/db`](./packages/db/.env.example) based on their respective `.env.example` files.
