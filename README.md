@@ -1,7 +1,7 @@
 # TanStarter
 
 > [!WARNING]
-> This is still a work in progress. Mainly blocked by:
+> This is still a work in progress. Mainly waiting on:
 >
 > - [ ] Drizzle Relations v2 support in Better Auth (https://github.com/better-auth/better-auth/pull/6913)
 >
@@ -9,7 +9,7 @@
 
 <!-- scaffold:description -->
 
-A minimal monorepo starter for 🏝️ TanStack Start.
+A minimal monorepo starter for 🏝️ TanStack Start, based on [mugnavo/tanstarter](https://github.com/mugnavo/tanstarter).
 
 - [Turborepo](https://turborepo.com/) + [pnpm](https://pnpm.io/)
 - [React 19](https://react.dev) + [React Compiler](https://react.dev/learn/react-compiler)
