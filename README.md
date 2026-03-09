@@ -1,4 +1,4 @@
-# TanStarter
+# [TanStarter Monorepo](https://github.com/mugnavo/tanstarter-monorepo)
 
 > [!WARNING]
 > This is still a work in progress. Mainly waiting on:
