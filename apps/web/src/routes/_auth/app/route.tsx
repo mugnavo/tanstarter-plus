@@ -17,7 +17,7 @@ function AppLayout() {
             back to home
           </Button>
           <span className="rounded-md border bg-card p-1 font-mono text-xs text-card-foreground">
-            /_auth/app/route.tsx
+            _auth/app/route.tsx
           </span>
         </div>
         <ThemeToggle />
