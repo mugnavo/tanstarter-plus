@@ -1,31 +1,40 @@
 import { Button } from "@repo/ui/components/button";
 import { createFileRoute, Link, Outlet } from "@tanstack/react-router";
 
+import { SignOutButton } from "~/components/sign-out-button";
+import { ThemeToggle } from "~/components/theme-toggle";
+
 export const Route = createFileRoute("/_auth/app")({
   component: AppLayout,
 });
 
 function AppLayout() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center gap-10 p-2">
-      <div className="flex flex-col items-center gap-2">
-        <h1 className="text-3xl font-bold sm:text-4xl">App Layout</h1>
-        <pre className="mb-4 rounded-md border bg-card p-1 text-xs text-card-foreground">
-          routes/_auth/app/route.tsx
-        </pre>
-        <div className="mb-4 flex flex-col items-center gap-2 text-sm text-foreground/80">
-          This is a protected layout from the _auth pathless layout route:
-          <pre className="rounded-md border bg-card p-1 text-xs text-card-foreground">
-            routes/_auth/route.tsx
-          </pre>
+    <div className="flex min-h-svh flex-col items-center justify-center gap-2 px-2">
+      <div className="flex w-full max-w-3xl justify-between">
+        <div className="flex items-center gap-1">
+          <Button render={<Link to="/" />} size="sm" nativeButton={false}>
+            back to home
+          </Button>
+          <span className="rounded-md border bg-card p-1 font-mono text-xs text-card-foreground">
+            /_auth/app/route.tsx
+          </span>
         </div>
-
-        <Button render={<Link to="/" />} className="w-fit" size="lg" nativeButton={false}>
-          Back to home
-        </Button>
+        <ThemeToggle />
+      </div>
+      <div className="w-full max-w-3xl rounded-md border p-2">
+        <Outlet />
       </div>
 
-      <Outlet />
+      <div className="flex w-full max-w-3xl flex-wrap justify-between gap-2 text-sm">
+        <div className="flex flex-col gap-0.5">
+          what's next? maybe a sidebar?
+          <span className="rounded-md border bg-card px-2 py-1 font-mono text-xs text-card-foreground">
+            pnpm ui add sidebar
+          </span>
+        </div>
+        <SignOutButton />
+      </div>
     </div>
   );
 }
