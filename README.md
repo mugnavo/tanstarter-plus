@@ -18,7 +18,7 @@ pnpm create mugnavo -t monorepo
 - [Turborepo](https://turborepo.com/) + [pnpm](https://pnpm.io/)
 - [React 19](https://react.dev) + [React Compiler](https://react.dev/learn/react-compiler)
 - TanStack [Start](https://tanstack.com/start/latest) + [Router](https://tanstack.com/router/latest) + [Query](https://tanstack.com/query/latest) + [Form](https://tanstack.com/form/latest)
-- [Vite 8](https://vite.dev/) + [Nitro v3](https://v3.nitro.build/)
+- [Vite 8](https://vite.dev/) + [Nitro v3](https://nitro.build/)
 - [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) + [Base UI](https://base-ui.com/) (base-maia) + [Remix Icon](https://remixicon.com/)
 - [Drizzle ORM](https://orm.drizzle.team/) + PostgreSQL
 - [Better Auth](https://www.better-auth.com/)
@@ -85,7 +85,7 @@ pnpm create mugnavo -t monorepo
 
 ## Deploying to production
 
-The [vite config](./apps/web/vite.config.ts#L15-L16) is currently configured to use Nitro v3 to deploy on Netlify, but supports many other [deployment presets](https://v3.nitro.build/deploy) like Vercel and Node.
+The [vite config](./apps/web/vite.config.ts#L15-L16) is currently configured to use Nitro to deploy on Netlify, but supports many other [deployment presets](https://nitro.build/deploy) like Vercel and Node.
 
 While Nitro provides a great multi-provider default, the official [@netlify/vite-plugin-tanstack-start](https://www.npmjs.com/package/@netlify/vite-plugin-tanstack-start) is also available for Netlify deployments.
 
@@ -96,7 +96,7 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 - [Router/Start issues](https://github.com/TanStack/router/issues) - TanStack Start is in RC.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
 - [Vite 8 beta](https://vite.dev/blog/announcing-vite8-beta) - We're using Vite 8 beta which is powered by Rolldown.
-- [Nitro v3 nightly](https://v3.nitro.build/docs/nightly) - This template is configured with Nitro v3 nightly by default.
+- [Nitro v3 beta](https://nitro.build/blog/v3-beta) - This template is configured with Nitro v3 beta by default.
 - [Drizzle ORM v1 Beta](https://orm.drizzle.team/docs/relations-v1-v2) - Drizzle ORM v1 is in beta with relations v2.
 - [Better Auth experimental branch](https://github.com/better-auth/better-auth/pull/6913) - We're using a separate branch of Better Auth v1.5 that supports Drizzle relations v2.
 

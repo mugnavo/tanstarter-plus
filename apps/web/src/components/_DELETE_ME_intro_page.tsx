@@ -365,7 +365,7 @@ const PLATFORM_BADGES: TechBadge[] = [
   },
   {
     alt: "Nitro version",
-    href: "https://v3.nitro.build/",
+    href: "https://nitro.build/",
     src: "https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmugnavo%2Ftanstarter-monorepo%2Fmain%2Fpnpm-workspace.yaml&query=%24.catalog.nitro&label=nitro&style=flat-square",
   },
 ];
