@@ -87,7 +87,7 @@ pnpm create mugnavo -t monorepo
 
 The [vite config](./apps/web/vite.config.ts#L15-L16) is currently configured to use Nitro to deploy on Netlify, but supports many other [deployment presets](https://nitro.build/deploy) like Vercel and Node.
 
-While Nitro provides a great multi-provider default, the official [@netlify/vite-plugin-tanstack-start](https://www.npmjs.com/package/@netlify/vite-plugin-tanstack-start) is also available for Netlify deployments.
+While Nitro provides a great multi-provider default, the official [@netlify/vite-plugin-tanstack-start](https://npmx.dev/package/@netlify/vite-plugin-tanstack-start) is also available for Netlify deployments.
 
 Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for deploying to other platforms.
 
@@ -95,12 +95,19 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 
 - [Router/Start issues](https://github.com/TanStack/router/issues) - TanStack Start is in RC.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
-- [Vite 8 beta](https://vite.dev/blog/announcing-vite8-beta) - We're using Vite 8 beta which is powered by Rolldown.
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - This template is configured with Nitro v3 beta by default.
 - [Drizzle ORM v1 Beta](https://orm.drizzle.team/docs/relations-v1-v2) - Drizzle ORM v1 is in beta with relations v2.
 - [Better Auth experimental branch](https://github.com/better-auth/better-auth/pull/6913) - We're using a separate branch of Better Auth v1.5 that supports Drizzle relations v2.
+- [@vitejs/plugin-react](https://github.com/rolldown/plugins/issues/10) - We're using an old version (5.2.0) of this plugin as a temporary workaround for [this issue](https://github.com/rolldown/plugins/issues/10). See `vite.config.ts` and upgrade to ^6.0.0 once it's resolved.
 
 ## Goodies
+
+#### Git hooks
+
+We use [Husky](https://typicode.github.io/husky/) to run git hooks with the following tools:
+
+- [lint-staged](https://github.com/lint-staged/lint-staged) - Run Oxfmt to format staged files on commit (`pre-commit`).
+- [commitlint](https://commitlint.js.org/) - Enforce [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages (`commit-msg`).
 
 #### Scripts
 
