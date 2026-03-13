@@ -50,6 +50,9 @@ pnpm create mugnavo -t monorepo
 
 ## Getting Started
 
+> [!IMPORTANT]
+> This guide assumes you have [Vite+ `vp`](https://viteplus.dev/guide/#install-vp) and [pnpm](https://pnpm.io/installation) installed.
+
 1. [Use this template](https://github.com/new?template_name=tanstarter-monorepo&template_owner=mugnavo) or create a project using our CLI:
 
    ```
@@ -92,6 +95,7 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 
 ## Issue watchlist
 
+- [Vite+ issues](https://github.com/voidzero-dev/vite-plus/issues) - Vite+ is in alpha.
 - [Router/Start issues](https://github.com/TanStack/router/issues) - TanStack Start is in RC.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - This template is configured with Nitro v3 beta by default.
