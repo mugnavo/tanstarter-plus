@@ -28,8 +28,8 @@ pnpm tanstack search-docs "loaders" --library router --framework react --json
 
 ## Testing
 
-No testing framework is currently set up. Prefer lint checks for now.
+Vitest hasn't been set up yet. Prefer lint checks for now.
 
 ## Formatting
 
-Oxfmt is configured for consistent code formatting via `pnpm format`. It runs automatically on commit via Husky pre-commit hooks, so manual formatting is not necessary.
+Oxfmt (via Vite+) is configured for consistent code formatting via `pnpm format`. It runs automatically on commit via Vite+ pre-commit hooks, so manual formatting is not necessary.

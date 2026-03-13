@@ -2,7 +2,7 @@
 
 ## Essentials
 
-- Stack: TypeScript + React (TanStack Start) in a pnpm + Turborepo monorepo, with Drizzle ORM, shadcn/ui, and Better Auth.
+- Stack: TypeScript + React (TanStack Start) in a pnpm + Vite+ monorepo, with Drizzle ORM, shadcn/ui, and Better Auth.
 - Prefer shared `@repo/ui` components; add primitives via shadcn CLI (`pnpm ui add <component>`).
 - Use shared pnpm catalog versions (`pnpm-workspace.yaml`) via `catalog:`.
 - For TanStack libraries, consult latest docs via `pnpm tanstack <command>` (see [Workflow](.agents/workflow.md#tanstack-cli)).
@@ -14,3 +14,4 @@
 - [Auth patterns](.agents/auth.md) - Route guards, middleware, auth utilities
 - [TypeScript conventions](.agents/typescript.md) - Casting rules, prefer type inference
 - [Workflow](.agents/workflow.md) - Workflow commands, validation approach
+- [Vite+](.agents/vite-plus.md) - Vite+ commands, common pitfalls

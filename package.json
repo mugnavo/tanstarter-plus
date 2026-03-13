@@ -1,16 +1,18 @@
 {
   "name": "tanstarter",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "dev:web": "turbo run dev --filter=@repo/web",
-    "lint": "oxlint --type-aware --type-check",
-    "lint:fix": "oxlint --type-aware --type-check --fix",
-    "format": "oxfmt",
-    "format:check": "oxfmt --check",
-    "check": "turbo run quality",
-    "prepare": "husky",
+    "build": "vp run build",
+    "dev": "vp run dev --recursive",
+    "dev:web": "vp run dev --filter=@repo/web",
+    "lint": "vp lint --type-aware --type-check",
+    "lint:fix": "vp lint --type-aware --type-check --fix",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
+    "check": "vp check",
+    "check:fix": "vp check --fix",
+    "prepare": "vp config",
     "deps": "pnpm dlx taze@latest -Ilwr",
     "deps:major": "pnpm dlx taze@latest major -Ilwr",
     "tanstack": "pnpm dlx @tanstack/cli@latest",
@@ -27,16 +29,7 @@
     "@tanstack/eslint-plugin-query": "catalog:",
     "@tanstack/eslint-plugin-router": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
-    "eslint-plugin-turbo": "catalog:",
-    "husky": "catalog:",
-    "lint-staged": "catalog:",
-    "oxfmt": "catalog:",
-    "oxlint": "catalog:",
-    "oxlint-tsgolint": "catalog:",
-    "turbo": "catalog:"
-  },
-  "lint-staged": {
-    "*": "oxfmt --no-error-on-unmatched-pattern"
+    "vite-plus": "catalog:"
   },
   "engines": {
     "node": ">=24"

@@ -6,6 +6,11 @@
     "shadcn": {
       "command": "npx",
       "args": ["-y", "shadcn@latest", "mcp"]
+    },
+    "vite-plus": {
+      "command": "npx",
+      "args": ["vp", "mcp"],
+      "type": "stdio"
     }
   }
 }
