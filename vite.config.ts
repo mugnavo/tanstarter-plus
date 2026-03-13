@@ -1,9 +1,18 @@
 import { defineConfig } from "vite-plus";
 
+// https://viteplus.dev/config/
 export default defineConfig({
+  // Git hooks for staged files - https://viteplus.dev/guide/commit-hooks
   staged: {
     "*": "vp fmt --no-error-on-unmatched-pattern",
   },
+
+  // Vite Task
+  // https://viteplus.dev/config/run
+  // https://viteplus.dev/guide/run
+  run: {},
+
+  // Oxfmt - https://oxc.rs/docs/guide/usage/formatter/config.html
   fmt: {
     tabWidth: 2,
     semi: true,
@@ -38,6 +47,8 @@ export default defineConfig({
       "dist",
     ],
   },
+
+  // Oxlint - https://oxc.rs/docs/guide/usage/linter/config
   lint: {
     plugins: ["typescript", "react", "react-perf", "jsx-a11y"],
     env: {
