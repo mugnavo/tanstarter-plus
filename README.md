@@ -15,7 +15,7 @@ A minimal monorepo starter for 🏝️ TanStack Start, based on [mugnavo/tanstar
 pnpm create mugnavo -t monorepo
 ```
 
-- [Vite+](https://viteplus.dev/) + pnpm workspaces with [catalogs](https://pnpm.io/catalogs)
+- [Vite Plus](https://viteplus.dev/) + pnpm workspaces with [catalogs](https://pnpm.io/catalogs)
 - [React 19](https://react.dev) + [React Compiler](https://react.dev/learn/react-compiler)
 - TanStack [Start](https://tanstack.com/start/latest) + [Router](https://tanstack.com/router/latest) + [Query](https://tanstack.com/query/latest) + [Form](https://tanstack.com/form/latest)
 - [Vite 8](https://vite.dev/) + [Nitro v3](https://nitro.build/)
