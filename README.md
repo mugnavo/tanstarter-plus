@@ -98,7 +98,6 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - This template is configured with Nitro v3 beta by default.
 - [Drizzle ORM v1 Beta](https://orm.drizzle.team/docs/relations-v1-v2) - Drizzle ORM v1 is in beta with relations v2.
 - [Better Auth experimental branch](https://github.com/better-auth/better-auth/pull/6913) - We're using a separate branch of Better Auth v1.5 that supports Drizzle relations v2.
-- [@vitejs/plugin-react](https://github.com/rolldown/plugins/issues/10) - We're using an old version (5.2.0) of this plugin as a temporary workaround for [this issue](https://github.com/rolldown/plugins/issues/10). See `vite.config.ts` and upgrade to ^6.0.0 once it's resolved.
 
 ## Goodies
 
