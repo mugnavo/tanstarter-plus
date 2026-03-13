@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vp run build",
+    "build": "vp run build --recursive",
+    "build:web": "vp run build --filter=@repo/web",
     "dev": "vp run dev --recursive",
     "dev:web": "vp run dev --filter=@repo/web",
     "lint": "vp lint --type-aware --type-check",
