@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vp dev",
     "build": "vp build",
+    "cached-build": "vp run cache:build",
     "preview": "vp preview",
     "start": "node .output/server/index.mjs",
     "ui": "vpx shadcn@latest"

@@ -98,7 +98,7 @@ Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/doc
 
 ### Build caching
 
-Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task. A `cache:build` task is configured in [`apps/web/vite.config.ts`](./apps/web/vite.config.ts) that can enable faster builds via caching. When deploying, use `vp run cache:build` as the build command to take advantage of this feature.
+Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task. A `cache:build` task is configured in [`apps/web/vite.config.ts`](./apps/web/vite.config.ts) that can enable faster builds via caching. When deploying, use `vp run cache:build` or `pnpm run cached-build` as the build command to take advantage of this feature.
 
 ## Issue watchlist
 

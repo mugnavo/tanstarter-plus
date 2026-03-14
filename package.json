@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "cached-build": "vp run cache:build --recursive",
     "build": "vp run cache:build --recursive",
     "build:web": "vp run web#cache:build",
     "dev": "vp run dev --recursive",
