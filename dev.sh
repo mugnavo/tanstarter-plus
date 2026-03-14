@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export FORCE_COLOR=1
+export CLICOLOR_FORCE=1
+
 echo "Initiating dev setup with local PostgreSQL instance..."
 
 # Auto-detect compose command
