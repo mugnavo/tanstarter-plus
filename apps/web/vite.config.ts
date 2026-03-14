@@ -27,6 +27,7 @@ export default defineConfig({
           "!**/dist/**",
           "!**/*.tsbuildinfo",
           "!**/node_modules/.vite/**",
+          "!**/node_modules/.vite-temp/**",
         ],
       },
     },
