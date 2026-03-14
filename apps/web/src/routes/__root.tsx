@@ -1,4 +1,3 @@
-/// <reference types="vite/client" />
 import type { AuthQueryResult } from "@repo/auth/tanstack/queries";
 import { Toaster } from "@repo/ui/components/sonner";
 import { ThemeProvider } from "@repo/ui/lib/theme-provider";
