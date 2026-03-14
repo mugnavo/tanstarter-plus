@@ -85,7 +85,7 @@ pnpm create mugnavo -t monorepo
 > ```sh
 > ./dev.sh # runs "vp run dev --recursive"
 > # or
-> ./dev.sh web # runs "vp run dev --filter=@repo/web"
+> ./dev.sh web # runs "vp run --filter=@repo/web dev"
 > ```
 
 ## Deploying to production

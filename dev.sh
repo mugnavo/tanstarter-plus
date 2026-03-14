@@ -20,7 +20,7 @@ $COMPOSE_CMD up -d
 
 # Determine which dev command to run based on parameters
 if [ -n "$1" ]; then
-    DEV_CMD="dev --filter=@repo/$1"
+    DEV_CMD="--filter=@repo/$1 dev"
     echo "Starting $1 development server..."
 else
     DEV_CMD="dev --recursive"
