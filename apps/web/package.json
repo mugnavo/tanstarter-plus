@@ -35,6 +35,7 @@
     "@repo/tsconfig": "workspace:*",
     "@rolldown/plugin-babel": "catalog:",
     "@tailwindcss/vite": "catalog:",
+    "@tanstack/devtools-a11y": "catalog:",
     "@tanstack/devtools-vite": "catalog:",
     "@tanstack/react-devtools": "catalog:",
     "@tanstack/react-form-devtools": "catalog:",

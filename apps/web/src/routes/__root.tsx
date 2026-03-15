@@ -1,6 +1,7 @@
 import type { AuthQueryResult } from "@repo/auth/tanstack/queries";
 import { Toaster } from "@repo/ui/components/sonner";
 import { ThemeProvider } from "@repo/ui/lib/theme-provider";
+import { a11yDevtoolsPlugin } from "@tanstack/devtools-a11y/react";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { formDevtoolsPlugin } from "@tanstack/react-form-devtools";
 import type { QueryClient } from "@tanstack/react-query";
@@ -96,6 +97,7 @@ function RootDocument({ children }: { readonly children: React.ReactNode }) {
               render: <TanStackRouterDevtoolsPanel />,
             },
             formDevtoolsPlugin(),
+            a11yDevtoolsPlugin(),
           ]}
         />
 

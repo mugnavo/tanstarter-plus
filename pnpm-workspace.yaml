@@ -11,18 +11,19 @@ catalog:
   "@remixicon/react": ^4.9.0
   "@rolldown/plugin-babel": ^0.2.1
   "@tailwindcss/vite": ^4.2.1
-  "@tanstack/devtools-vite": ^0.5.5
+  "@tanstack/devtools-a11y": ^0.1.1
+  "@tanstack/devtools-vite": ^0.6.0
   "@tanstack/eslint-plugin-query": ^5.91.4
-  "@tanstack/eslint-plugin-router": ^1.161.4
-  "@tanstack/react-devtools": ^0.9.13
-  "@tanstack/react-form-devtools": ^0.2.18
+  "@tanstack/eslint-plugin-router": ^1.161.5
+  "@tanstack/react-devtools": ^0.10.0
+  "@tanstack/react-form-devtools": ^0.2.19
   "@tanstack/react-form-start": ^1.28.5
   "@tanstack/react-query": ^5.90.21
   "@tanstack/react-query-devtools": ^5.91.3
-  "@tanstack/react-router": ^1.167.0
-  "@tanstack/react-router-devtools": ^1.166.7
-  "@tanstack/react-router-ssr-query": ^1.166.7
-  "@tanstack/react-start": ^1.166.11
+  "@tanstack/react-router": ^1.167.1
+  "@tanstack/react-router-devtools": ^1.166.8
+  "@tanstack/react-router-ssr-query": ^1.166.8
+  "@tanstack/react-start": ^1.166.12
   "@types/babel__core": ^7.20.5
   "@types/node": ^24.12.0
   "@types/react": ^19.2.14
@@ -42,7 +43,7 @@ catalog:
   postgres: ^3.4.8
   react: ^19.2.4
   react-dom: ^19.2.4
-  shadcn: ^4.0.7
+  shadcn: ^4.0.8
   sonner: ^2.0.7
   tailwind-merge: ^3.5.0
   tailwindcss: ^4.2.1
