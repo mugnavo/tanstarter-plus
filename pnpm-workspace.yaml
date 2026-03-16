@@ -11,7 +11,7 @@ catalog:
   "@remixicon/react": ^4.9.0
   "@rolldown/plugin-babel": ^0.2.1
   "@tailwindcss/vite": ^4.2.1
-  "@tanstack/devtools-a11y": ^0.1.1
+  "@tanstack/devtools-a11y": ^0.1.2
   "@tanstack/devtools-vite": ^0.6.0
   "@tanstack/eslint-plugin-query": ^5.91.4
   "@tanstack/eslint-plugin-router": ^1.161.6
@@ -37,7 +37,7 @@ catalog:
   drizzle-kit: beta
   drizzle-orm: beta
   eslint-plugin-react-hooks: ^7.0.1
-  motion: ^12.36.0
+  motion: ^12.37.0
   nanoid: ^5.1.7
   nitro: ^3.0.260311-beta
   postgres: ^3.4.8

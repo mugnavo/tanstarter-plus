@@ -85,7 +85,7 @@ export function IntroPageDeleteMe() {
                     $
                   </span>
                   {/* oxlint-disable-next-line eslint-plugin-jsx-a11y/click-events-have-key-events eslint-plugin-jsx-a11y/no-static-element-interactions */}
-                  <span className="select-all" onClick={copyToClipboard}>
+                  <span className="select-all" onClick={copyToClipboard} tabIndex={0}>
                     {cloneCommand}
                   </span>
                 </code>
