@@ -4,5 +4,6 @@
 @import "@fontsource-variable/dm-sans";
 
 @theme inline {
+  --font-heading: var(--font-sans);
   --font-sans: "DM Sans Variable", sans-serif;
 }
