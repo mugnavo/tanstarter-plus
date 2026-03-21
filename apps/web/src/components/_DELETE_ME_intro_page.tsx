@@ -250,13 +250,19 @@ function RepoStarsBadge({
   const starsLabel = `${formattedStarsCount}${data ? "" : "+"} stars on GitHub`;
 
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={starsLabel}
-      title={starsLabel}
-      className="inline-flex items-center gap-2 overflow-hidden rounded-md border border-border bg-card px-2 py-1.5 font-mono text-xs text-foreground hover:brightness-90 sm:text-sm"
+    <Button
+      render={
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={starsLabel}
+          title={starsLabel}
+        />
+      }
+      nativeButton={false}
+      variant="secondary"
+      className="tracking-wide"
     >
       <SiGithub className="size-4" />
       {formattedStarsCount}
@@ -266,7 +272,7 @@ function RepoStarsBadge({
         strokeWidth={0}
         className="size-4 text-yellow-500 dark:text-yellow-300"
       />
-    </a>
+    </Button>
   );
 }
 
