@@ -64,6 +64,8 @@ pnpm create mugnavo -t monorepo
    pnpm db migrate
    ```
 
+   https://orm.drizzle.team/docs/migrations
+
 4. Run the development server:
 
    ```sh
