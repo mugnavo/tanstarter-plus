@@ -3,11 +3,6 @@
 > [!IMPORTANT]
 > This template requires [Vite+ `vp`](https://viteplus.dev/guide/#install-vp) and [pnpm](https://pnpm.io/installation) to be installed.
 
-> [!WARNING]
-> See the [issue watchlist](#issue-watchlist) below. Right now, we're mainly waiting on:
->
-> - Drizzle v1 / relations v2 in Better Auth (https://github.com/better-auth/better-auth/pull/6913)
-
 <!-- scaffold:description -->
 
 A minimal monorepo starter for 🏝️ TanStack Start, based on [mugnavo/tanstarter](https://github.com/mugnavo/tanstarter).
@@ -21,7 +16,7 @@ pnpm create mugnavo -t monorepo
 - TanStack [Start](https://tanstack.com/start/latest) + [Router](https://tanstack.com/router/latest) + [Query](https://tanstack.com/query/latest) + [Form](https://tanstack.com/form/latest)
 - [Vite 8](https://vite.dev/) + [Nitro v3](https://nitro.build/)
 - [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) + [Base UI](https://base-ui.com/) (base-maia)
-- [Drizzle ORM](https://orm.drizzle.team/) + PostgreSQL
+- [Drizzle ORM v1](https://orm.drizzle.team/docs/relations-v1-v2) (beta) + PostgreSQL
 - [Better Auth](https://www.better-auth.com/)
 
 ```sh
@@ -44,9 +39,9 @@ pnpm create mugnavo -t monorepo
 - [Deploying to production](#deploying-to-production)
 - [Issue watchlist](#issue-watchlist)
 - [Goodies](#goodies)
+  - [Git hooks](#git-hooks)
   - [Scripts](#scripts)
   - [Utilities](#utilities)
-- [Third-party integrations](#thirdparty-integrations)
 - [Ecosystem](#ecosystem)
 
 ## Getting Started
@@ -88,11 +83,9 @@ pnpm create mugnavo -t monorepo
 
 ## Deploying to production
 
-The [vite config](./apps/web/vite.config.ts#L15-L16) is currently configured to use Nitro to deploy on Netlify, but supports many other [deployment presets](https://nitro.build/deploy) like Vercel and Node.
+The [vite config](./apps/web/vite.config.ts#L45-L46) is configured to use Nitro by default, which supports many [deployment presets](https://nitro.build/deploy) like Netlify, Vercel, Node.js, and more.
 
-While Nitro provides a great multi-provider default, the official [@netlify/vite-plugin-tanstack-start](https://npmx.dev/package/@netlify/vite-plugin-tanstack-start) is also available for Netlify deployments.
-
-Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for deploying to other platforms.
+Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for more information.
 
 <!-- ### Build caching
 
@@ -131,15 +124,6 @@ This template is configured for **[pnpm](https://pnpm.io/)** by default. Check t
 
 - [`/auth/src/tanstack/middleware.ts`](./packages/auth/src/tanstack/middleware.ts) - Sample middleware for forcing authentication on server functions.
 - [`/web/src/components/theme-toggle.tsx`](./apps/web/src/components/theme-toggle.tsx), [`/ui/lib/theme-provider.tsx`](./packages/ui/lib/theme-provider.tsx) - A theme toggle and provider for toggling between light and dark mode.
-
-## Third‑party integrations
-
-The template is kept minimal by default, but is compatible with many third‑party integrations. Here are a few we use in our projects:
-
-- [PostHog](https://posthog.com/) - analytics & observability
-- [Resend](https://resend.com/) - email
-- [Polar](https://polar.sh/) - billing
-- ... and many more!
 
 ## License
 
