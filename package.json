@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "cached-build": "vp run cache:build --recursive",
-    "build": "vp run cache:build --recursive",
+    "cached-build": "vp run --recursive cache:build",
+    "build": "vp run --recursive cache:build",
     "build:web": "vp run web#cache:build",
     "dev": "pnpm run --recursive --parallel dev",
     "dev:web": "vp run --filter=@repo/web dev",

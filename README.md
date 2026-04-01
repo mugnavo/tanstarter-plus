@@ -78,9 +78,9 @@ pnpm create mugnavo -t monorepo
 > If you want to run a local Postgres instance via Docker Compose with the dev server, you can use the [dev.sh](./dev.sh) script:
 >
 > ```sh
-> ./dev.sh # runs "vp run dev --recursive"
+> ./dev.sh # runs "pnpm run --recursive --parallel dev"
 > # or
-> ./dev.sh web # runs "vp run --filter=@repo/web dev"
+> ./dev.sh web # runs "pnpm run --filter=@repo/web dev"
 > ```
 
 ## Deploying to production
