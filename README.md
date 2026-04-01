@@ -89,9 +89,12 @@ The [vite config](./apps/web/vite.config.ts#L45-L46) is configured to use Nitro 
 
 Refer to the [TanStack Start hosting docs](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) for more information.
 
-<!-- ### Build caching
+### Build caching
 
-Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task. A `cache:build` task is configured in [`apps/web/vite.config.ts`](./apps/web/vite.config.ts) that can enable faster builds via caching. When deploying, use `vp run cache:build` or `pnpm run cached-build` as the build command to take advantage of this feature. -->
+Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task. A `build` task is configured in [`apps/web/vite.config.ts`](./apps/web/vite.config.ts) that can enable faster builds via caching. When deploying, use `vp run build` as the build command.
+
+> [!IMPORTANT]
+> Task caching is **_currently disabled_** in the root [`vite.config.ts`](./vite.config.ts#L15-L20) since Vite+ only replays terminal output for now, not build artifacts. If your platform preserves build outputs between deployments, you can re-enable it. See [this issue](https://github.com/mugnavo/tanstarter-plus/issues/8) for more details.
 
 ## Issue watchlist
 

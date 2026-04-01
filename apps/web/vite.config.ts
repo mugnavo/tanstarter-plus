@@ -13,8 +13,8 @@ export default defineConfig({
     // https://viteplus.dev/guide/run
     // https://viteplus.dev/guide/cache
     tasks: {
-      "cache:build": {
-        // When deploying, use "vp run cache:build" as the build command
+      build: {
+        // When deploying, use `vp run build` as the build command, not `vp build`
         command: "vp build",
         env: ["NODE_ENV", "VITE_*"],
         input: [
@@ -28,6 +28,7 @@ export default defineConfig({
           "!**/*.tsbuildinfo",
           "!**/node_modules/.vite/**",
           "!**/node_modules/.vite-temp/**",
+          "!**/node_modules/.nitro/**",
         ],
       },
     },
