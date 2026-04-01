@@ -26,12 +26,12 @@ if [ -n "$1" ]; then
     DEV_CMD="--filter=@repo/$1 dev"
     echo "Starting $1 development server..."
 else
-    DEV_CMD="dev --recursive"
+    DEV_CMD="--recursive --parallel dev"
     echo "Starting all development servers..."
 fi
 
 # Start the development server
-vp run $DEV_CMD
+pnpm run $DEV_CMD
 
 # Cleanup function
 cleanup() {
