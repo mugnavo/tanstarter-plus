@@ -9,7 +9,6 @@ import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
 import {
   createRootRouteWithContext,
   HeadContent,
-  Outlet,
   ScriptOnce,
   Scripts,
 } from "@tanstack/react-router";
@@ -17,10 +16,12 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
 import appCss from "~/styles.css?url";
 
-export const Route = createRootRouteWithContext<{
+interface MyRouterContext {
   queryClient: QueryClient;
   user: AuthQueryResult;
-}>()({
+}
+
+export const Route = createRootRouteWithContext<MyRouterContext>()({
   // Typically we don't need the user immediately in landing pages.
   // For protected routes with loader data, see /_auth/route.tsx
   // beforeLoad: ({ context }) => {
@@ -54,16 +55,8 @@ export const Route = createRootRouteWithContext<{
       { rel: "stylesheet", href: appCss },
     ],
   }),
-  component: RootComponent,
+  shellComponent: RootDocument,
 });
-
-function RootComponent() {
-  return (
-    <RootDocument>
-      <Outlet />
-    </RootDocument>
-  );
-}
 
 function RootDocument({ children }: { readonly children: React.ReactNode }) {
   return (
