@@ -44,7 +44,11 @@ export default defineConfig({
     devtools(),
     tanstackStart(),
     // https://tanstack.com/start/latest/docs/framework/react/guide/hosting
-    nitro(),
+    nitro({
+      // fixes SSR issues with Vite 8:
+      // https://discord.com/channels/719702312431386674/1490005967067414608/1490634230458224751
+      traceDeps: ["react", "react-dom"],
+    }),
     viteReact(),
     // https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#react-compiler
     babel({
