@@ -9,23 +9,6 @@
 
 Don't build after every change. If lint passes; assume changes work.
 
-## TanStack CLI
-
-Use `pnpm tanstack` (which is aliased to `vpx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
-
-```bash
-# List TanStack libraries (optionally filter by --group state|headlessUI|performance|tooling)
-pnpm tanstack libraries --json
-
-# Fetch a specific doc page
-pnpm tanstack doc router framework/react/guide/data-loading --json
-pnpm tanstack doc query framework/react/overview --docs-version v5 --json
-
-# Search docs (optionally filter by --library, --framework, --limit)
-pnpm tanstack search-docs "server functions" --library start --json
-pnpm tanstack search-docs "loaders" --library router --framework react --json
-```
-
 ## Testing
 
 Vitest hasn't been set up yet. Prefer lint checks for now.

@@ -16,3 +16,32 @@
 - [TypeScript conventions](.agents/typescript.md) - Casting rules, prefer type inference
 - [Workflow](.agents/workflow.md) - Workflow commands, validation approach
 - [Vite+](.agents/vite-plus.md) - Vite+ commands, common pitfalls
+
+<!-- intent-skills:start -->
+
+# Skill mappings - when working in these areas, load the linked skill file into context.
+
+skills:
+
+- task: "general TanStack Router and @tanstack/react-router docs for routes, layouts, route tree, and navigation"
+  load: "apps/web/node_modules/@tanstack/react-router/dist/llms/index.js"
+- task: "general TanStack Start and @tanstack/react-start docs for app structure, patterns, and server features"
+load: "apps/web/node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
+<!-- intent-skills:end -->
+
+## TanStack Docs
+
+Use `pnpm tanstack` (which is aliased to `vpx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
+
+```bash
+# List TanStack libraries (optionally filter by --group state|headlessUI|performance|tooling)
+pnpm tanstack libraries --json
+
+# Fetch a specific doc page
+pnpm tanstack doc router framework/react/guide/data-loading --json
+pnpm tanstack doc query framework/react/overview --docs-version v5 --json
+
+# Search docs (optionally filter by --library, --framework, --limit)
+pnpm tanstack search-docs "server functions" --library start --json
+pnpm tanstack search-docs "loaders" --library router --framework react --json
+```
