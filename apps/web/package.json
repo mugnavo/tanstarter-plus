@@ -9,7 +9,7 @@
     "ui": "vpx shadcn@latest"
   },
   "dependencies": {
-    "@fontsource-variable/dm-sans": "catalog:",
+    "@fontsource-variable/inter": "catalog:",
     "@icons-pack/react-simple-icons": "catalog:",
     "@repo/auth": "workspace:*",
     "@repo/db": "workspace:*",

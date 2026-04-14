@@ -136,7 +136,7 @@ export function IntroPageDeleteMe() {
           ))}
         </section>
 
-        <section className="mx-auto mb-16 hidden max-w-[60ch] space-y-3 bg-card/50 p-4 text-sm text-foreground/80 sm:block">
+        <section className="mx-auto mb-16 hidden max-w-[65ch] space-y-3 bg-card/50 p-4 text-sm text-foreground/80 sm:block">
           <p>
             You may delete this component at{" "}
             <span className="rounded-md border border-border bg-card px-1 py-1.5 font-mono">
