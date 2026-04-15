@@ -35,5 +35,8 @@
   "oxc.fmt.configPath": "./vite.config.ts",
 
   // set oxfmt as default formatter
-  "editor.defaultFormatter": "oxc.oxc-vscode"
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+
+  // vite+ for npm scripts
+  "npm.scriptRunner": "vp"
 }
