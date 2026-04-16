@@ -97,7 +97,6 @@ export default defineConfig({
 
       // ref: https://github.com/TheAlexLichter/oxlint-react-compiler-rules/issues/1
       // Recommended rules (from LintRulePreset.Recommended)
-      "react-hooks-js/component-hook-factories": "error",
       "react-hooks-js/config": "error",
       "react-hooks-js/error-boundaries": "error",
       "react-hooks-js/gating": "error",
@@ -115,10 +114,8 @@ export default defineConfig({
       // Recommended-latest rules (from LintRulePreset.RecommendedLatest)
       "react-hooks-js/void-use-memo": "error",
       // Off rules (LintRulePreset.Off) - not enabled by default
-      "react-hooks-js/automatic-effect-dependencies": "off",
       "react-hooks-js/capitalized-calls": "off",
       "react-hooks-js/fbt": "off",
-      "react-hooks-js/fire": "off",
       "react-hooks-js/hooks": "off",
       "react-hooks-js/invariant": "off",
       "react-hooks-js/memoized-effect-dependencies": "off",
