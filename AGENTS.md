@@ -18,15 +18,14 @@
 
 <!-- intent-skills:start -->
 
-# Skill mappings - when working in these areas, load the linked skill file into context.
+## Skill Loading
 
-skills:
+Before substantial work:
 
-- task: "general TanStack Router and @tanstack/react-router docs for routes, layouts, route tree, and navigation"
-  load: "apps/web/node_modules/@tanstack/react-router/dist/llms/index.js"
-- task: "general TanStack Start and @tanstack/react-start docs for app structure, patterns, and server features"
-  load: "apps/web/node_modules/@tanstack/react-start/skills/react-start/SKILL.md"
-
+- Skill check: run `vpx @tanstack/intent@latest list`, or use skills already listed in context.
+- Skill guidance: if one local skill clearly matches the task, run `vpx @tanstack/intent@latest load <package>#<skill>` and follow the returned `SKILL.md`.
+- Monorepos: when working across packages, run the skill check from the workspace root and prefer the local skill for the package being changed.
+- Multiple matches: prefer the most specific local skill for the package or concern you are changing; load additional skills only when the task spans multiple packages or concerns.
 <!-- intent-skills:end -->
 
 ## TanStack Docs
