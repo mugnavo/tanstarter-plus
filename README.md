@@ -55,7 +55,7 @@ pnpm create mugnavo -t monorepo
    pnpm create mugnavo -t monorepo
    ```
 
-2. Create `.env` files in [`/apps/web`](./apps/web/.env.example) and [`/packages/db`](./packages/db/.env.example) based on their respective `.env.example` files.
+2. Create a `.env` file in `/apps/web` based on [`.env.example`](./apps/web/.env.example).
 
 3. Generate the initial migration with drizzle-kit, then apply to your database:
 

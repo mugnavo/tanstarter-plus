@@ -1,4 +1,9 @@
+import { loadEnvFile } from "node:process";
+
 import type { Config } from "drizzle-kit";
+
+// Load .env from /apps/web
+loadEnvFile("../../apps/web/.env");
 
 export default {
   out: "./migrations",
