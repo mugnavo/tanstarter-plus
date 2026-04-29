@@ -14,7 +14,6 @@
 - [Auth patterns](.agents/auth.md) - Route guards, middleware, auth utilities
 - [TypeScript conventions](.agents/typescript.md) - Casting rules, prefer type inference
 - [Workflow](.agents/workflow.md) - Workflow commands, validation approach
-- [Vite+](.agents/vite-plus.md) - Vite+ commands, common pitfalls
 
 <!-- intent-skills:start -->
 
@@ -30,7 +29,7 @@ Before substantial work:
 
 ## TanStack Docs
 
-Use `pnpm tanstack` (which is aliased to `vpx @tanstack/cli@latest` in `package.json`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
+Use `pnpm tanstack` (aliased to `vpx @tanstack/cli@latest`) to look up TanStack documentation. Always pass `--json` for machine-readable output.
 
 ```bash
 # List TanStack libraries (optionally filter by --group state|headlessUI|performance|tooling)
@@ -44,3 +43,13 @@ pnpm tanstack doc query framework/react/overview --docs-version v5 --json
 pnpm tanstack search-docs "server functions" --library start --json
 pnpm tanstack search-docs "loaders" --library router --framework react --json
 ```
+
+<!--VITE PLUS START-->
+
+# Using Vite+, the Unified Toolchain for the Web
+
+This project is using Vite+, a unified toolchain built on top of Vite, Rolldown, Vitest, tsdown, Oxlint, Oxfmt, and Vite Task. Vite+ wraps runtime management, package management, and frontend tooling in a single global CLI called `vp`. Vite+ is distinct from Vite, and it invokes Vite through `vp dev` and `vp build`. Run `vp help` to print a list of commands and `vp <command> --help` for information about a specific command.
+
+Docs are local at `node_modules/vite-plus/docs` or online at https://viteplus.dev/guide/.
+
+<!--VITE PLUS END-->
