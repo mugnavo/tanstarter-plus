@@ -15,7 +15,7 @@ pnpm create mugnavo -t monorepo
 - [React 19](https://react.dev) + [React Compiler](https://react.dev/learn/react-compiler)
 - TanStack [Start](https://tanstack.com/start/latest) + [Router](https://tanstack.com/router/latest) + [Query](https://tanstack.com/query/latest) + [Form](https://tanstack.com/form/latest)
 - [Vite 8](https://vite.dev/) + [Nitro v3](https://nitro.build/)
-- [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) + [Base UI](https://base-ui.com/) (base-luma, [`--preset b1aIaoaxs`](https://ui.shadcn.com/create?preset=b1aIaoaxs&base=base&template=start))
+- [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) + [Base UI](https://base-ui.com/) (base-luma, [`--preset b1aIaoaxs`](https://ui.shadcn.com/create?preset=b1aIaoaxs&base=base&template=start&pointer=true))
 - [Drizzle ORM v1](https://orm.drizzle.team/docs/relations-v1-v2) (beta) + PostgreSQL
 - [Better Auth](https://www.better-auth.com/)
 
