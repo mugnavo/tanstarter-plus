@@ -20,10 +20,10 @@ catalog:
   "@tanstack/react-form-start": ^1.29.1
   "@tanstack/react-query": ^5.100.6
   "@tanstack/react-query-devtools": ^5.100.6
-  "@tanstack/react-router": ^1.168.26
+  "@tanstack/react-router": ^1.169.0
   "@tanstack/react-router-devtools": ^1.166.13
   "@tanstack/react-router-ssr-query": ^1.166.12
-  "@tanstack/react-start": ^1.167.52
+  "@tanstack/react-start": ^1.167.55
   "@types/babel__core": ^7.20.5
   "@types/node": ^24.12.2
   "@types/react": ^19.2.14
@@ -39,7 +39,7 @@ catalog:
   eslint-plugin-react-hooks: ^7.1.1
   lucide-react: ^1.14.0
   motion: ^12.38.0
-  nanoid: ^5.1.9
+  nanoid: ^5.1.10
   nitro: ^3.0.260429-beta
   postgres: ^3.4.9
   react: ^19.2.5
@@ -53,7 +53,7 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
-  zod: ^4.3.6
+  zod: ^4.4.1
 
 catalogMode: prefer
 
