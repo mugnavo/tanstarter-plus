@@ -11,7 +11,6 @@ export default {
   breakpoints: true,
   verbose: true,
   strict: true,
-  casing: "snake_case",
 
   dialect: "postgresql",
   dbCredentials: {
