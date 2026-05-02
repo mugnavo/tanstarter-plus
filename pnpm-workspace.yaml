@@ -2,6 +2,15 @@ packages:
   - apps/*
   - packages/*
   - tooling/*
+allowBuilds:
+  esbuild: true
+  msw: false
+
+# FIXME: Temporary workaround for experimental @better-auth/drizzle-adapter package,
+# which is currently being published via pkg.pr.new in an ongoing pull request.
+# https://github.com/better-auth/better-auth/pull/6913
+# Remove this option once that PR is merged and published to npm.
+blockExoticSubdeps: false
 
 catalog:
   "@babel/core": ^7.29.0
@@ -13,17 +22,17 @@ catalog:
   "@tailwindcss/vite": ^4.2.4
   "@tanstack/devtools-a11y": ^0.1.2
   "@tanstack/devtools-vite": ^0.6.0
-  "@tanstack/eslint-plugin-query": ^5.100.6
+  "@tanstack/eslint-plugin-query": ^5.100.8
   "@tanstack/eslint-plugin-router": ^1.161.6
   "@tanstack/react-devtools": ^0.10.2
   "@tanstack/react-form-devtools": ^0.2.22
   "@tanstack/react-form-start": ^1.29.1
-  "@tanstack/react-query": ^5.100.6
-  "@tanstack/react-query-devtools": ^5.100.6
-  "@tanstack/react-router": ^1.169.0
+  "@tanstack/react-query": ^5.100.8
+  "@tanstack/react-query-devtools": ^5.100.8
+  "@tanstack/react-router": ^1.169.1
   "@tanstack/react-router-devtools": ^1.166.13
   "@tanstack/react-router-ssr-query": ^1.166.12
-  "@tanstack/react-start": ^1.167.56
+  "@tanstack/react-start": ^1.167.59
   "@types/babel__core": ^7.20.5
   "@types/node": ^24.12.2
   "@types/react": ^19.2.14
@@ -34,8 +43,8 @@ catalog:
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
   date-fns: ^4.1.0
-  drizzle-kit: beta
-  drizzle-orm: beta
+  drizzle-kit: rc
+  drizzle-orm: rc
   eslint-plugin-react-hooks: ^7.1.1
   lucide-react: ^1.14.0
   motion: ^12.38.0
@@ -53,12 +62,12 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
-  zod: ^4.4.1
+  zod: ^4.4.2
 
 catalogMode: prefer
 
 overrides:
-  "@better-auth/drizzle-adapter": https://pkg.pr.new/better-auth/better-auth/@better-auth/drizzle-adapter@6913
+  "@better-auth/drizzle-adapter": "catalog:"
   vite: "catalog:"
   vitest: "catalog:"
 peerDependencyRules:
