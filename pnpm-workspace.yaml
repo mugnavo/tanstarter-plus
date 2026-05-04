@@ -62,7 +62,7 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
-  zod: ^4.4.2
+  zod: ^4.4.3
 
 catalogMode: prefer
 

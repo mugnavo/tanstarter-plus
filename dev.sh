@@ -15,6 +15,20 @@ else
     exit 1
 fi
 
+# Shutdown compose services on exit
+CLEANUP_RAN=0
+cleanup() {
+    if [ "$CLEANUP_RAN" -eq 1 ]; then
+        return
+    fi
+
+    CLEANUP_RAN=1
+
+    echo "Shutting down..."
+    $COMPOSE_CMD down
+}
+trap cleanup SIGINT SIGTERM EXIT
+
 echo "Using: $COMPOSE_CMD"
 
 # Start PostgreSQL
@@ -32,13 +46,3 @@ fi
 
 # Start the development server
 pnpm run $DEV_CMD
-
-# Cleanup function
-cleanup() {
-    echo "Shutting down..."
-    $COMPOSE_CMD down
-    exit 0
-}
-
-# Trap cleanup function on script exit
-trap cleanup SIGINT SIGTERM EXIT
