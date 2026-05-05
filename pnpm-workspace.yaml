@@ -29,10 +29,10 @@ catalog:
   "@tanstack/react-form-start": ^1.29.1
   "@tanstack/react-query": ^5.100.9
   "@tanstack/react-query-devtools": ^5.100.9
-  "@tanstack/react-router": ^1.169.1
+  "@tanstack/react-router": ^1.169.2
   "@tanstack/react-router-devtools": ^1.166.13
   "@tanstack/react-router-ssr-query": ^1.166.12
-  "@tanstack/react-start": ^1.167.62
+  "@tanstack/react-start": ^1.167.64
   "@types/babel__core": ^7.20.5
   "@types/node": ^24.12.2
   "@types/react": ^19.2.14
@@ -53,7 +53,7 @@ catalog:
   postgres: ^3.4.9
   react: ^19.2.5
   react-dom: ^19.2.5
-  shadcn: ^4.6.0
+  shadcn: ^4.7.0
   sonner: ^2.0.7
   tailwind-merge: ^3.5.0
   tailwindcss: ^4.2.4
