@@ -8,14 +8,14 @@ allowBuilds:
 
 # FIXME: Temporary workaround for experimental @better-auth/drizzle-adapter version,
 # which is currently being published via pkg.pr.new in an ongoing pull request:
-# https://github.com/better-auth/better-auth/pull/6913
+# https://github.com/better-auth/better-auth/pull/9489
 # Remove this option once that PR is merged and published to npm.
 blockExoticSubdeps: false
 
 catalog:
   "@babel/core": ^7.29.0
   "@base-ui/react": ^1.4.1
-  "@better-auth/drizzle-adapter": https://pkg.pr.new/better-auth/better-auth/@better-auth/drizzle-adapter@6913
+  "@better-auth/drizzle-adapter": https://pkg.pr.new/@better-auth/drizzle-adapter@9489
   "@fontsource-variable/inter": ^5.2.8
   "@icons-pack/react-simple-icons": ^13.13.0
   "@rolldown/plugin-babel": ^0.2.3
@@ -34,7 +34,7 @@ catalog:
   "@tanstack/react-router-ssr-query": ^1.166.12
   "@tanstack/react-start": ^1.167.65
   "@types/babel__core": ^7.20.5
-  "@types/node": ^24.12.2
+  "@types/node": ^24.12.3
   "@types/react": ^19.2.14
   "@types/react-dom": ^19.2.3
   "@vitejs/plugin-react": ^6.0.1

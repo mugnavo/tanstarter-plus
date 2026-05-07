@@ -9,7 +9,7 @@
   },
   "scripts": {
     "db": "drizzle-kit",
-    "auth:generate": "vpx https://pkg.pr.new/better-auth/better-auth/@better-auth/cli@6913 generate --config ../auth/src/auth.ts --y --output ./src/schema/auth.schema.ts"
+    "auth:generate": "vpx https://pkg.pr.new/auth@9489 generate --config ../auth/src/auth.ts --y --output ./src/schema/auth.schema.ts"
   },
   "dependencies": {
     "drizzle-orm": "catalog:",
