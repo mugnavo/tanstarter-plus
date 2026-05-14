@@ -20,11 +20,11 @@ catalog:
   "@icons-pack/react-simple-icons": ^13.13.0
   "@rolldown/plugin-babel": ^0.2.3
   "@tailwindcss/vite": ^4.3.0
-  "@tanstack/devtools-a11y": ^0.1.2
-  "@tanstack/devtools-vite": ^0.6.0
+  "@tanstack/devtools-a11y": ^0.1.3
+  "@tanstack/devtools-vite": ^0.7.0
   "@tanstack/eslint-plugin-query": ^5.100.10
   "@tanstack/eslint-plugin-router": ^1.161.6
-  "@tanstack/react-devtools": ^0.10.3
+  "@tanstack/react-devtools": ^0.10.5
   "@tanstack/react-form-devtools": ^0.2.27
   "@tanstack/react-form-start": ^1.32.0
   "@tanstack/react-query": ^5.100.10
@@ -46,7 +46,7 @@ catalog:
   drizzle-kit: rc
   drizzle-orm: rc
   eslint-plugin-react-hooks: ^7.1.1
-  lucide-react: ^1.14.0
+  lucide-react: ^1.16.0
   motion: ^12.38.0
   nanoid: ^5.1.11
   nitro: ^3.0.260429-beta
