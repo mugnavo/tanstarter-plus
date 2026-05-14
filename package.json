@@ -31,13 +31,6 @@
     "eslint-plugin-react-hooks": "catalog:",
     "vite-plus": "catalog:"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": ">=11.1.2",
-      "onFail": "download"
-    }
-  },
   "engines": {
     "node": ">=24"
   },
