@@ -22,17 +22,17 @@ catalog:
   "@tailwindcss/vite": ^4.3.0
   "@tanstack/devtools-a11y": ^0.1.3
   "@tanstack/devtools-vite": ^0.7.0
-  "@tanstack/eslint-plugin-query": ^5.100.11
+  "@tanstack/eslint-plugin-query": ^5.100.13
   "@tanstack/eslint-plugin-router": ^1.162.0
   "@tanstack/react-devtools": ^0.10.5
   "@tanstack/react-form-devtools": ^0.2.27
   "@tanstack/react-form-start": ^1.32.0
-  "@tanstack/react-query": ^5.100.11
-  "@tanstack/react-query-devtools": ^5.100.11
-  "@tanstack/react-router": ^1.170.4
+  "@tanstack/react-query": ^5.100.13
+  "@tanstack/react-query-devtools": ^5.100.13
+  "@tanstack/react-router": ^1.170.7
   "@tanstack/react-router-devtools": ^1.167.0
   "@tanstack/react-router-ssr-query": ^1.167.0
-  "@tanstack/react-start": ^1.168.6
+  "@tanstack/react-start": ^1.168.10
   "@types/babel__core": ^7.20.5
   "@types/node": ^24.12.4
   "@types/react": ^19.2.15
@@ -47,13 +47,13 @@ catalog:
   drizzle-orm: rc
   eslint-plugin-react-hooks: ^7.1.1
   lucide-react: ^1.16.0
-  motion: ^12.39.0
+  motion: ^12.40.0
   nanoid: ^5.1.11
-  nitro: ^3.0.260429-beta
+  nitro: ^3.0.260522-beta
   postgres: ^3.4.9
   react: ^19.2.6
   react-dom: ^19.2.6
-  shadcn: ^4.7.0
+  shadcn: ^4.8.0
   sonner: ^2.0.7
   tailwind-merge: ^3.6.0
   tailwindcss: ^4.3.0
