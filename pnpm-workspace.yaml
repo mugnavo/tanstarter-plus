@@ -12,8 +12,12 @@ allowBuilds:
 # Remove this option once that PR is merged and published to npm.
 blockExoticSubdeps: false
 
+# https://pnpm.io/settings#minimumreleaseage
+# https://pnpm.io/supply-chain-security#delay-dependency-updates
+minimumReleaseAge: 1440
+
 catalog:
-  "@babel/core": ^7.29.0
+  "@babel/core": ^7.29.7
   "@base-ui/react": ^1.5.0
   "@better-auth/drizzle-adapter": https://pkg.pr.new/@better-auth/drizzle-adapter@9489
   "@fontsource-variable/inter": ^5.2.8
@@ -32,9 +36,9 @@ catalog:
   "@tanstack/react-router": ^1.170.8
   "@tanstack/react-router-devtools": ^1.167.0
   "@tanstack/react-router-ssr-query": ^1.167.0
-  "@tanstack/react-start": ^1.168.11
+  "@tanstack/react-start": ^1.168.13
   "@types/babel__core": ^7.20.5
-  "@types/node": ^24.12.4
+  "@types/node": ^25.9.1
   "@types/react": ^19.2.15
   "@types/react-dom": ^19.2.3
   "@vitejs/plugin-react": ^6.0.2
@@ -43,8 +47,8 @@ catalog:
   class-variance-authority: ^0.7.1
   clsx: ^2.1.1
   date-fns: ^4.3.0
-  drizzle-kit: rc
-  drizzle-orm: rc
+  drizzle-kit: 1.0.0-rc.3
+  drizzle-orm: 1.0.0-rc.3
   eslint-plugin-react-hooks: ^7.1.1
   lucide-react: ^1.16.0
   motion: ^12.40.0
