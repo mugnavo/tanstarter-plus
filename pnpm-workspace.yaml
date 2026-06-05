@@ -6,12 +6,6 @@ allowBuilds:
   esbuild: true
   msw: false
 
-# FIXME: Temporary workaround for experimental @better-auth/drizzle-adapter version,
-# which is currently being published via pkg.pr.new in an ongoing pull request:
-# https://github.com/better-auth/better-auth/pull/9489
-# Remove this option once that PR is merged and published to npm.
-blockExoticSubdeps: false
-
 # https://pnpm.io/settings#minimumreleaseage
 # https://pnpm.io/supply-chain-security#delay-dependency-updates
 minimumReleaseAge: 1440
@@ -19,7 +13,7 @@ minimumReleaseAge: 1440
 catalog:
   "@babel/core": 7.29.7
   "@base-ui/react": 1.5.0
-  "@better-auth/drizzle-adapter": https://pkg.pr.new/@better-auth/drizzle-adapter@9489
+  "@better-auth/drizzle-adapter": npm:better-auth-drizzle-adapter@1.0.4
   "@fontsource-variable/inter": 5.2.8
   "@icons-pack/react-simple-icons": 13.13.0
   "@rolldown/plugin-babel": 0.2.3
@@ -36,7 +30,7 @@ catalog:
   "@tanstack/react-router": 1.170.11
   "@tanstack/react-router-devtools": 1.167.0
   "@tanstack/react-router-ssr-query": 1.167.1
-  "@tanstack/react-start": 1.168.19
+  "@tanstack/react-start": 1.168.20
   "@types/babel__core": 7.20.5
   "@types/node": 25.9.1
   "@types/react": 19.2.16

@@ -102,7 +102,7 @@ Vite+ has support for [caching](https://viteplus.dev/guide/cache) via Vite Task.
 - [Devtools releases](https://github.com/TanStack/devtools/releases) - TanStack Devtools is in alpha and may still have breaking changes.
 - [Nitro v3 beta](https://nitro.build/blog/v3-beta) - This template is configured with Nitro v3 beta by default.
 - [Drizzle ORM v1 RC](https://orm.drizzle.team/docs/relations-v1-v2) - Drizzle ORM v1 is in RC with relations v2.
-- [Better Auth experimental Drizzle adapter](https://github.com/better-auth/better-auth/pull/9489) - We're using a separate branch of Better Auth's Drizzle adapter that supports Drizzle relations v2.
+- [Better Auth experimental Drizzle adapter](https://github.com/remorses/better-auth-drizzle-adapter), [original PR](https://github.com/better-auth/better-auth/pull/9489) - We're using a vendored version of Better Auth's Drizzle adapter that supports Drizzle relations v2.
 - [Vite+ issues](https://github.com/voidzero-dev/vite-plus/issues) - Vite+ is in alpha.
 
 ## Goodies

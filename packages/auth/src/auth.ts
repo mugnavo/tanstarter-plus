@@ -1,5 +1,6 @@
 import "@tanstack/react-start/server-only";
-import { drizzleAdapter } from "@better-auth/drizzle-adapter/relations-v2";
+// import { drizzleAdapter } from "@better-auth/drizzle-adapter/relations-v2";
+import { drizzleAdapter } from "@better-auth/drizzle-adapter";
 import { db } from "@repo/db";
 import * as schema from "@repo/db/schema";
 import { betterAuth } from "better-auth/minimal";
