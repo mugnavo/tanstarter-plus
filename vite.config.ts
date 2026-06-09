@@ -79,8 +79,11 @@ export default defineConfig({
         name: "eslint-tanstack-query",
         specifier: "@tanstack/eslint-plugin-query",
       },
+      { name: "vite-plus", specifier: "vite-plus/oxlint-plugin" },
     ],
     rules: {
+      "vite-plus/prefer-vite-plus-imports": "warn",
+
       "no-deprecated": "warn",
       "typescript/no-floating-promises": "off",
       "typescript/no-misused-spread": "off",
