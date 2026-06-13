@@ -88,6 +88,8 @@ export default defineConfig({
       "typescript/no-floating-promises": "off",
       "typescript/no-misused-spread": "off",
 
+      "jsx-a11y/prefer-tag-over-role": "off",
+
       "eslint-tanstack-router/create-route-property-order": "warn",
 
       "eslint-tanstack-query/exhaustive-deps": "warn",
