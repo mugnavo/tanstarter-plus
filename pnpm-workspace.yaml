@@ -38,7 +38,7 @@ catalog:
   babel-plugin-react-compiler: 1.0.0
   better-auth: 1.6.20
   class-variance-authority: 0.7.1
-  cnfast: 0.0.6
+  cnfast: 0.0.8
   date-fns: 4.4.0
   drizzle-kit: 1.0.0-rc.3
   drizzle-orm: 1.0.0-rc.3

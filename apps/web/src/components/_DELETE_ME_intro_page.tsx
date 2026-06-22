@@ -38,137 +38,135 @@ export function IntroPageDeleteMe() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <div className="mx-auto max-w-3xl px-4 pt-16 pb-12 md:pt-32">
-        <header className="mb-8">
-          <div className="mb-6 flex items-center justify-between">
-            <a href={repoUrl} className="flex items-center gap-2 hover:underline">
-              <img
-                src="https://mugnavo.com/favicon-32x32.png"
-                alt="Mugnavo logo"
-                className="size-5 md:size-6"
-              />
-              <span className="text-lg font-semibold tracking-tight text-foreground md:text-xl">
-                tanstarter-plus
-              </span>
-            </a>
-            <div className="flex items-center gap-2">
-              <RepoStarsBadge href={tanstarterRepoUrl} fallbackStarsCount={fallbackStarsCount} />
-              <ThemeToggle />
-            </div>
+    <div className="mx-auto min-h-screen max-w-3xl px-4 pt-16 pb-12 md:pt-32">
+      <header className="mb-8">
+        <div className="mb-6 flex items-center justify-between">
+          <a href={repoUrl} className="flex items-center gap-2 hover:underline">
+            <img
+              src="https://mugnavo.com/favicon-32x32.png"
+              alt="Mugnavo logo"
+              className="size-5 md:size-6"
+            />
+            <span className="text-lg font-semibold tracking-tight text-foreground md:text-xl">
+              tanstarter-plus
+            </span>
+          </a>
+          <div className="flex items-center gap-2">
+            <RepoStarsBadge href={tanstarterRepoUrl} fallbackStarsCount={fallbackStarsCount} />
+            <ThemeToggle />
           </div>
+        </div>
 
-          <h1 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            A <span className="text-yellow-500 dark:text-yellow-200">minimal</span> monorepo starter
-            for TanStack Start.
-          </h1>
+        <h1 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          A <span className="text-yellow-500 dark:text-yellow-200">minimal</span> monorepo starter
+          for TanStack Start.
+        </h1>
 
-          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            A minimal, opinionated monorepo foundation for building type-safe web applications
-            without the extra boilerplate.
-          </p>
-        </header>
+        <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          A minimal, opinionated monorepo foundation for building type-safe web applications without
+          the extra boilerplate.
+        </p>
+      </header>
 
-        <section className="mb-12">
-          <div className="rounded-xl border border-border bg-card p-1 shadow-2xl">
-            <div className="group flex items-center justify-between rounded-lg border border-border bg-card p-4">
-              <div className="flex items-center gap-3 overflow-hidden">
-                <TerminalIcon className="hidden size-4 shrink-0 text-muted-foreground/70 sm:inline" />
-                <code className="overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap md:text-base">
-                  <span className="mr-2 hidden text-muted-foreground/70 select-none sm:inline">
-                    $
-                  </span>
-                  {/* oxlint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
-                  <span className="select-all" onClick={copyToClipboard}>
-                    {cloneCommand}
-                  </span>
-                </code>
-              </div>
-              <button
-                onClick={copyToClipboard}
-                className="ml-4 shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-                title="Copy command"
+      <section className="mb-12">
+        <div className="rounded-xl border border-border bg-card p-1 shadow-2xl">
+          <div className="group flex items-center justify-between rounded-lg border border-border bg-card p-4">
+            <div className="flex items-center gap-3 overflow-hidden">
+              <TerminalIcon className="hidden size-4 shrink-0 text-muted-foreground/70 sm:inline" />
+              <code className="overflow-hidden font-mono text-sm text-ellipsis whitespace-nowrap md:text-base">
+                <span className="mr-2 hidden text-muted-foreground/70 select-none sm:inline">
+                  $
+                </span>
+                {/* oxlint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+                <span className="select-all" onClick={copyToClipboard}>
+                  {cloneCommand}
+                </span>
+              </code>
+            </div>
+            <button
+              onClick={copyToClipboard}
+              className="ml-4 shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+              title="Copy command"
+            >
+              {isCopied ? <CheckIcon className="size-5" /> : <CopyIcon className="size-5" />}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <Suspense fallback={<div className="py-6">Loading session...</div>}>
+        <UserAction />
+      </Suspense>
+
+      <section className="mb-16 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2">
+        <Feature
+          title="Full-Stack Foundation"
+          desc="Build on a modern full-stack framework with TanStack Start, Router, and Vite."
+        />
+        <Feature
+          title="Only the Essentials"
+          desc="Drizzle ORM, Better Auth, shadcn/ui. Less boilerplate that you'll end up deleting anyway."
+        />
+        <Feature
+          title="End-to-end Type Safety"
+          desc="Effortless type safety powered by TanStack Router and Start server functions."
+        />
+        <Feature
+          title="Next-Gen Tooling"
+          desc="Powered by Vite+, which includes Vite 8, Rolldown, and Oxc for a faster development workflow."
+        />
+      </section>
+
+      <section className="mb-12 space-y-2">
+        {TECH_BADGE_ROWS.map((row, rowIndex) => (
+          <div key={rowIndex} className="flex flex-wrap items-center justify-center gap-2">
+            {row.map((badge) => (
+              <a
+                key={badge.alt}
+                href={badge.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
               >
-                {isCopied ? <CheckIcon className="size-5" /> : <CopyIcon className="size-5" />}
-              </button>
-            </div>
+                <img alt={badge.alt} src={badge.src} />
+              </a>
+            ))}
           </div>
-        </section>
+        ))}
+      </section>
 
-        <Suspense fallback={<div className="py-6">Loading session...</div>}>
-          <UserAction />
-        </Suspense>
+      <section className="mx-auto mb-16 hidden max-w-[65ch] space-y-3 bg-card/50 p-4 text-sm text-foreground/80 sm:block">
+        <p>
+          You may delete this component at{" "}
+          <span className="rounded-md border border-border bg-card px-1 py-1.5 font-mono">
+            components/_DELETE_ME_intro_page.tsx
+          </span>{" "}
+          after creating your project.
+        </p>
 
-        <section className="mb-16 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2">
-          <Feature
-            title="Full-Stack Foundation"
-            desc="Build on a modern full-stack framework with TanStack Start, Router, and Vite."
-          />
-          <Feature
-            title="Only the Essentials"
-            desc="Drizzle ORM, Better Auth, shadcn/ui. Less boilerplate that you'll end up deleting anyway."
-          />
-          <Feature
-            title="End-to-end Type Safety"
-            desc="Effortless type safety powered by TanStack Router and Start server functions."
-          />
-          <Feature
-            title="Next-Gen Tooling"
-            desc="Powered by Vite+, which includes Vite 8, Rolldown, and Oxc for a faster development workflow."
-          />
-        </section>
+        <p>Happy coding!</p>
+      </section>
 
-        <section className="mb-12 space-y-2">
-          {TECH_BADGE_ROWS.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex flex-wrap items-center justify-center gap-2">
-              {row.map((badge) => (
-                <a
-                  key={badge.alt}
-                  href={badge.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-opacity hover:opacity-80"
-                >
-                  <img alt={badge.alt} src={badge.src} />
-                </a>
-              ))}
-            </div>
-          ))}
-        </section>
-
-        <section className="mx-auto mb-16 hidden max-w-[65ch] space-y-3 bg-card/50 p-4 text-sm text-foreground/80 sm:block">
-          <p>
-            You may delete this component at{" "}
-            <span className="rounded-md border border-border bg-card px-1 py-1.5 font-mono">
-              components/_DELETE_ME_intro_page.tsx
-            </span>{" "}
-            after creating your project.
-          </p>
-
-          <p>Happy coding!</p>
-        </section>
-
-        <footer className="flex flex-col items-center justify-between gap-6 text-sm md:flex-row">
-          <a
-            href={repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <SiGithub className="size-5" />
-            GitHub
-          </a>
-          <a
-            href="https://mugnavo.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 underline decoration-border transition-all hover:decoration-foreground"
-          >
-            Mugnavo
-            <ExternalLinkIcon className="size-4" />
-          </a>
-        </footer>
-      </div>
+      <footer className="flex flex-col items-center justify-between gap-6 text-sm md:flex-row">
+        <a
+          href={repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 font-medium text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <SiGithub className="size-4" />
+          GitHub
+        </a>
+        <a
+          href="https://mugnavo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 underline decoration-border transition-all hover:decoration-foreground"
+        >
+          Mugnavo
+          <ExternalLinkIcon className="size-4" />
+        </a>
+      </footer>
     </div>
   );
 }
