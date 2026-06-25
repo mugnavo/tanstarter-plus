@@ -10,31 +10,31 @@ allowBuilds:
 minimumReleaseAge: 1440
 
 catalog:
-  "@babel/core": 7.29.7
+  "@babel/core": 8.0.1
   "@base-ui/react": 1.6.0
   "@better-auth/drizzle-adapter": npm:better-auth-drizzle-adapter@1.0.4
   "@fontsource-variable/inter": 5.2.8
   "@icons-pack/react-simple-icons": 13.13.0
   "@rolldown/plugin-babel": 0.2.3
   "@tailwindcss/vite": 4.3.1
-  "@tanstack/devtools-a11y": 0.1.4
-  "@tanstack/devtools-vite": 0.8.0
-  "@tanstack/eslint-plugin-query": 5.101.0
+  "@tanstack/devtools-a11y": 0.1.6
+  "@tanstack/devtools-vite": 0.8.1
+  "@tanstack/eslint-plugin-query": 5.101.1
   "@tanstack/eslint-plugin-router": 1.162.0
-  "@tanstack/react-devtools": 0.10.7
+  "@tanstack/react-devtools": 0.10.8
   "@tanstack/react-form-devtools": 0.2.29
   "@tanstack/react-form-start": 1.33.0
-  "@tanstack/react-query": 5.101.0
-  "@tanstack/react-query-devtools": 5.101.0
+  "@tanstack/react-query": 5.101.1
+  "@tanstack/react-query-devtools": 5.101.1
   "@tanstack/react-router": 1.170.16
   "@tanstack/react-router-devtools": 1.167.0
   "@tanstack/react-router-ssr-query": 1.167.1
   "@tanstack/react-start": 1.168.26
   "@types/babel__core": 7.20.5
-  "@types/node": 26.0.0
+  "@types/node": 26.0.1
   "@types/react": 19.2.17
   "@types/react-dom": 19.2.3
-  "@vitejs/plugin-react": 6.0.2
+  "@vitejs/plugin-react": 6.0.3
   babel-plugin-react-compiler: 1.0.0
   better-auth: 1.6.20
   class-variance-authority: 0.7.1
@@ -44,8 +44,8 @@ catalog:
   drizzle-orm: 1.0.0-rc.3
   eslint-plugin-react-hooks: 7.1.1
   lucide-react: 1.21.0
-  motion: 12.40.0
-  nanoid: 5.1.15
+  motion: 12.42.0
+  nanoid: 5.1.16
   nitro: 3.0.260610-beta
   postgres: 3.4.9
   react: 19.2.7
